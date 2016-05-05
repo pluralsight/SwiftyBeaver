@@ -555,6 +555,7 @@
 		1D9459A71CDBA40C000FA170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -579,6 +580,7 @@
 		1D9459A81CDBA40C000FA170 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -886,6 +888,7 @@
 				1D9459A81CDBA40C000FA170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EDCE3DE1C09D211002FA4A7 /* Build configuration list for PBXProject "SwiftyBeaver" */ = {
 			isa = XCConfigurationList;
