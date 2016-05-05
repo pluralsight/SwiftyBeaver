@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		048E6BFA1CDBB68E00DC9116 /* DestinationSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E6BF91CDBB68E00DC9116 /* DestinationSetTests.swift */; };
+		1D9459AA1CDBA434000FA170 /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E195B091C6B3B4600D924CB /* AES256CBC.swift */; };
+		1D9459AB1CDBA434000FA170 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31D62B1C185EE3004E0980 /* BaseDestination.swift */; };
+		1D9459AC1CDBA434000FA170 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31D62C1C185EE3004E0980 /* ConsoleDestination.swift */; };
+		1D9459AD1CDBA434000FA170 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31D62D1C185EE3004E0980 /* FileDestination.swift */; };
+		1D9459AE1CDBA434000FA170 /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED096F71C521C6900FE3059 /* SBPlatformDestination.swift */; };
+		1D9459AF1CDBA434000FA170 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31D6281C185ECD004E0980 /* SwiftyBeaver.swift */; };
+		1D9459B01CDBA44D000FA170 /* SwiftyBeaver.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9E6CAA471C148EC1009D9093 /* SwiftyBeaver.podspec */; };
+		1D9459B11CDBA454000FA170 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9E6CAA491C149579009D9093 /* LICENSE */; };
 		9E195B0A1C6B3B4600D924CB /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E195B091C6B3B4600D924CB /* AES256CBC.swift */; };
 		9E195B0B1C6B3B4600D924CB /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E195B091C6B3B4600D924CB /* AES256CBC.swift */; };
 		9E195B0C1C6B3B4600D924CB /* AES256CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E195B091C6B3B4600D924CB /* AES256CBC.swift */; };
@@ -60,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		048E6BF91CDBB68E00DC9116 /* DestinationSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSetTests.swift; sourceTree = "<group>"; };
+		1D9459A21CDBA40C000FA170 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E195B091C6B3B4600D924CB /* AES256CBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AES256CBC.swift; path = sources/AES256CBC.swift; sourceTree = "<group>"; };
 		9E195B0E1C6B3B6F00D924CB /* AES256CBCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES256CBCTests.swift; sourceTree = "<group>"; };
 		9E195B101C6B766D00D924CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D94599E1CDBA40C000FA170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EDCE3E01C09D211002FA4A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +178,7 @@
 				ACE597841C1882DF0031451F /* SwiftyBeaver.framework */,
 				ACE597951C18830D0031451F /* SwiftyBeaver.framework */,
 				ACE597A61C18832E0031451F /* SwiftyBeaver.framework */,
+				1D9459A21CDBA40C000FA170 /* SwiftyBeaver.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +201,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1D94599F1CDBA40C000FA170 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EDCE3E11C09D211002FA4A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +239,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1D9459A11CDBA40C000FA170 /* SwiftyBeaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9459A91CDBA40C000FA170 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */;
+			buildPhases = (
+				1D94599D1CDBA40C000FA170 /* Sources */,
+				1D94599E1CDBA40C000FA170 /* Frameworks */,
+				1D94599F1CDBA40C000FA170 /* Headers */,
+				1D9459A01CDBA40C000FA170 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyBeaver;
+			productName = SwiftyBeaver;
+			productReference = 1D9459A21CDBA40C000FA170 /* SwiftyBeaver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		9EDCE3E31C09D211002FA4A7 /* SwiftyBeaver (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EDCE3F81C09D211002FA4A7 /* Build configuration list for PBXNativeTarget "SwiftyBeaver (iOS)" */;
@@ -316,6 +358,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Sebastian Kreutzberger";
 				TargetAttributes = {
+					1D9459A11CDBA40C000FA170 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					9EDCE3E31C09D211002FA4A7 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -341,11 +386,21 @@
 				ACE597751C1882DF0031451F /* SwiftyBeaver (watchOS) */,
 				ACE597861C18830D0031451F /* SwiftyBeaver (tvOS) */,
 				ACE597971C18832E0031451F /* SwiftyBeaver (OSX) */,
+				1D9459A11CDBA40C000FA170 /* SwiftyBeaver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D9459A01CDBA40C000FA170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9459B11CDBA454000FA170 /* LICENSE in Resources */,
+				1D9459B01CDBA44D000FA170 /* SwiftyBeaver.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EDCE3E21C09D211002FA4A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +463,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D94599D1CDBA40C000FA170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9459AA1CDBA434000FA170 /* AES256CBC.swift in Sources */,
+				1D9459AB1CDBA434000FA170 /* BaseDestination.swift in Sources */,
+				1D9459AC1CDBA434000FA170 /* ConsoleDestination.swift in Sources */,
+				1D9459AD1CDBA434000FA170 /* FileDestination.swift in Sources */,
+				1D9459AE1CDBA434000FA170 /* SBPlatformDestination.swift in Sources */,
+				1D9459AF1CDBA434000FA170 /* SwiftyBeaver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EDCE3DF1C09D211002FA4A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +552,54 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1D9459A71CDBA40C000FA170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.SwiftyBeaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos macosx watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		1D9459A81CDBA40C000FA170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.SwiftyBeaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos macosx watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		9EDCE3F61C09D211002FA4A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -763,6 +879,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D9459A91CDBA40C000FA170 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9459A71CDBA40C000FA170 /* Debug */,
+				1D9459A81CDBA40C000FA170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9EDCE3DE1C09D211002FA4A7 /* Build configuration list for PBXProject "SwiftyBeaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
